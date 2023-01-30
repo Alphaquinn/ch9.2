@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const path = require('path');
 
 
 const fs = require("fs");
@@ -15,7 +16,7 @@ const questions = [
 
     {
         type: 'input',
-        name: 'description'
+        name: 'description',
         message: 'How would you desribe the reason for your project?',
     
 
@@ -108,14 +109,20 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName,data,function(err)){
-console.log(fileName);
-console.log(data)
-    }
+    return fs.writeFileSync(path.join(process.cwd(),fileName),data);
 }
 
+
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+    .then((inquirerResposes)=>{
+        console.log('initializing readme');
+        writeToFile('READ.md', generateMarkdown({...inquirerResposes}));
+        
+    });
+
+}
 
 // Function call to initialize app
 init();
