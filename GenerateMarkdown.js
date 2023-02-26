@@ -48,3 +48,6 @@ function renderLicenseBadge(license) {
 
   `;
   }
+
+
+  module.exports = generateMarkdown;
