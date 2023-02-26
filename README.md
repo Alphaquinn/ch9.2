@@ -1,6 +1,6 @@
 
     
-    # Project Title [idhkd]
+    # Project Title [readmegreneraterch9.2]
     ![License Badges[(https://img.sheilds.io/badge/LICENCE-${license}-blue)
     ----
   
@@ -15,23 +15,23 @@
   
   
     ###Description
-    djhdbkn
+    allows for an easy way to create reame.md's for projects
   
   
     ###Installation
-    dkbd'
+    inquirer
   
     ###Usage
-    jdhvb
+    to allow users to create readmes with ease
   
     ###contributing
-    djkhbd
+    no
   
     ###Tests
-    kjdb
+    node index.js
   
     ###License
-    Apache-2.0
+    MIT
   
   
     ###Questions
@@ -43,6 +43,6 @@
   
   
   ### Email
-  dkjbd
+  snowboarderquinn@gmail.com
   
   
