@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const path = require('path');
 
 
-const fs = require("fs");
+const fs = require('fs');
 const generateMarkdown = require("./GenerateMarkdown");
 
 // TODO: Create an array of questions for user input
@@ -82,7 +82,6 @@ function init() {
    });
 
 }
-
-// Function call to initialize app
+//function to call app
 init();
 
